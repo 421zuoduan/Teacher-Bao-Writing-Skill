@@ -1,65 +1,120 @@
-# Phrase Bank
+# Rhetorical Move Guide
 
-Use these as sentence frames, not as filler. Replace placeholders with concrete task properties and evidence.
+Use this file for style guidance, not for fixed sentence templates. Do not copy recurring phrases across unrelated outputs. For translation and local polishing, preserve the user's source meaning and scope before applying these moves.
 
-## Opening The Task
+## General Style
 
-- "This paper investigates <task/setting>, a fundamental problem in <area>."
-- "<Task> has witnessed remarkable progress, largely driven by <mainstream direction>."
-- "The success of <task> fundamentally hinges on <factor A> and <factor B>."
-- "Beyond <dominant direction>, recent studies have realized <emerging issue>."
+- Prefer restrained, reviewer-facing prose over promotional prose.
+- Keep each sentence accountable to a role: context, contrast, limitation, question, answer, mechanism, support, or evidence.
+- Vary sentence openings and transitions. If two adjacent paragraphs begin the same way, rewrite one of them.
+- Make abstract properties concrete by naming the condition, assumption, setting, or failure mode where they matter.
+- Avoid decorative intensifiers. A strong sentence should be strong because the claim is specific, not because the adjectives are forceful.
 
-## Exposing The Gap
+## Opening A Topic
 
-- "Despite the great success, we observe that <existing paradigm> still suffers from <property-level limitation>."
-- "However, such a criterion may be biased toward <hidden factor>."
-- "This issue becomes more pronounced in <realistic scenario>."
-- "To the best of our knowledge, <specific problem> remains barely explored."
-- "A naive extension of <prior method> fails because <reason>."
+Goal: establish the task without sounding like a textbook survey.
 
-## Central Question
+Use one or two of these moves:
 
-- "How to develop an effective <criterion/framework/procedure> to accommodate <challenge>?"
-- "Can we develop a <property>-invariant criterion for <task>?"
-- "How can we pursue <goal A> while preserving <goal B>?"
-- "How to make <procedure/system> decide when to end and which component to invoke next?"
+- Name the task or setting directly.
+- State why the task matters now.
+- Identify the dominant line of progress.
+- Narrow from broad area to the property the paper will examine.
+
+Avoid:
+
+- Starting every abstract or introduction with the same "this paper studies" formula.
+- Listing applications before the reader knows the central problem.
+
+## Exposing A Limitation
+
+Goal: make the gap structural rather than cosmetic.
+
+Use one or two of these moves:
+
+- Contrast prior progress with a property that remains unresolved.
+- Identify a hidden assumption behind existing solutions.
+- Explain why the limitation affects evaluation, deployment, reasoning, reliability, or interpretation.
+- Tie the limitation to a concrete observation, example, or failure case.
+
+Avoid:
+
+- Saying only that prior work ignores a problem.
+- Treating a missing module as the gap before explaining the property-level failure.
+
+## Asking The Central Question
+
+Goal: turn the limitation into a compact research objective.
+
+The question or objective should specify:
+
+- the artifact to be developed,
+- the property it must satisfy,
+- the setting or constraint that makes the problem nontrivial.
+
+It can be written as a direct question, an objective sentence, or a short problem statement. Choose the form that best fits the surrounding prose; do not force a question if the user only asks for translation or local polishing.
 
 ## Introducing The Answer
 
-- "In search of an answer, this paper explores <Name>, a novel <framework/method> for <goal>."
-- "To address this issue, we propose <Name>."
-- "The key idea behind <Name> is to <mechanism>."
-- "Specifically, we instantiate this idea with <component A> and <component B>."
-- "In light of this, we further develop <strategy>."
+Goal: make the method feel inevitable after the limitation.
+
+Use these moves in order:
+
+- Name the method, framework, criterion, or principle.
+- State the key idea before listing components.
+- Map each component to a failure mode or challenge.
+- Delay low-level implementation details until the reader understands the design rationale.
+
+Avoid:
+
+- Introducing the name before the problem is compelling.
+- Listing modules as a feature list.
+- Reusing the same transition phrase every time a method is introduced.
 
 ## Theory And Mechanism
 
-- "Theoretically, we show that <method/property> can <guarantee> under <condition>."
-- "Taking a step further, we conduct a theoretical analysis to explain <phenomenon>."
-- "This result indicates that <design> is aligned with <desired property>."
-- "We further provide a generalization bound showing that <claim>."
-- "The analysis reveals that <hidden mechanism>, motivating <design choice>."
+Goal: explain why the design should work, not merely decorate the paper with analysis.
+
+Clarify whether the analysis:
+
+- guarantees a property,
+- bounds a risk or error,
+- explains an empirical pattern,
+- diagnoses a failure mode,
+- motivates a design choice.
+
+Use theory/mechanism language only when the paper has real support. If support is missing, mark it as a placeholder or limitation.
 
 ## Validation
 
-- "Comprehensive validation across <evidence sources/settings> speaks to the efficacy of <Name>."
-- "Based on the results, we draw the following conclusions."
-- "First, <baseline behavior> indicates <problem>."
-- "Second, <method result> confirms <claimed property>."
-- "Finally, <efficiency/generalization result> demonstrates <practical value>."
-- "The ablation results verify the necessity of <component>."
+Goal: turn evidence into an argument.
+
+For each major result, state:
+
+- what was compared,
+- under what condition,
+- what changed,
+- why the change supports the claim.
+
+Use multiple evidence angles when available: overall result, fine-grained condition, component analysis, sensitivity, efficiency, generalization, and limitations.
+
+Avoid:
+
+- Presenting validation as a list of wins.
+- Calling validation comprehensive without saying which claim each evidence type supports.
 
 ## Contribution Bullets
 
-- "We identify <underexplored issue> in <setting> and show that <existing approach> fails to <property>."
-- "We propose <Name>, a <framework/method/criterion> that <core mechanism>."
-- "We theoretically establish <bound/proposition/theorem>, showing <why the method works>."
-- "Extensive validation across <evidence sources/settings> demonstrates <specific gains> and validates <property>."
+Goal: make each bullet carry a distinct claim.
 
-## Avoid Or Use Carefully
+A balanced contribution set usually contains:
 
-- Avoid "novel and effective" without naming the property.
-- Avoid "comprehensive validation" as a standalone contribution.
-- Avoid "significantly outperforms" without saying under which evaluation criterion and why.
-- Avoid adding "In search of an answer" when no explicit question appears before it.
-- Avoid copying phrase frames mechanically; preserve the logic chain first.
+- a problem/property contribution,
+- a method or framework contribution,
+- an analysis or mechanism contribution when available,
+- an evidence contribution that states what was validated and where.
+
+Avoid:
+
+- Multiple bullets that all say the method is effective.
+- Evidence-only bullets when the technical claim is still unclear.

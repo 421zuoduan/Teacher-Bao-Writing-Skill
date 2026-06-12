@@ -13,18 +13,13 @@ Logic-first research writing usually follows this chain:
 7. State the key idea in one sentence.
 8. Instantiate the idea as components, criteria, objectives, procedures, or strategies.
 9. Add theory, generalization, or mechanism-level explanation.
-10. Close with comprehensive evidence that "speaks to" or confirms efficacy.
+10. Close with comprehensive evidence that substantiates the central claim.
 
 ## Recurring Central Question Pattern
 
 The central question is a style anchor. It appears after the limitation has been made concrete and before the method is introduced.
 
-Common forms:
-
-- "How to develop an effective <criterion/framework/procedure> to accommodate <challenge>?"
-- "Can we develop an effective <property>-aware criterion for <task>?"
-- "How to develop an effective <paradigm>-based method to accommodate <property>?"
-- "How to develop a more reliable framework for <process/setting>?"
+Strong central questions usually name three things: the desired artifact, the property it must satisfy, and the setting where the property matters. They may be written as a direct question, a problem statement, or a compact objective sentence. Avoid reusing the same question wording across different papers.
 
 Use this question when the paper is centered on a property mismatch, new criterion, or framework. Skip it only for short notes or highly constrained section drafts.
 
@@ -107,13 +102,13 @@ Default order:
 7. Generalization or extension to other settings, data sources, populations, tasks, or systems.
 8. Potential challenges and solutions, when applicable.
 
-Use "Based on the results, we draw the following conclusions" when summarizing main tables.
+When summarizing main results, move from observation to interpretation: what changed, against which alternative, under what condition, and what claim the change supports.
 
 ## Style Tendencies
 
 - Uses concrete task nouns rather than vague claims.
-- Prefers "fundamental", "underexplored", "challenging", "practical", "generic", "principled", and "lightweight" when tied to a specific property.
-- Frequently uses "Specifically", "To this end", "In light of this", "Taking a step further", "Theoretically", and "Finally".
+- Uses evaluative adjectives only when they are tied to a concrete property, condition, or failure mode.
+- Uses transitions sparingly and functionally: each transition should clarify whether the sentence narrows scope, contrasts with prior work, unfolds a design, deepens analysis, or closes with evidence.
 - Treats theory as a support layer for the proposed principle, not as decorative math.
 - Treats evidence as a multi-angle validation story.
 
@@ -124,4 +119,5 @@ Use "Based on the results, we draw the following conclusions" when summarizing m
 - Saying a problem is important but not showing why existing work fails.
 - Treating "extensive validation" as a contribution without a substantive claim.
 - Using signature phrases without the underlying logic chain.
+- Repeating the same transition formula across translations, paragraph rewrites, or unrelated sections.
 - Overloading the introduction with implementation details before the central question.

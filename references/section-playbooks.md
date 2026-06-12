@@ -17,10 +17,10 @@ For partial outputs:
 
 Use a 6-part abstract:
 
-1. **Task and importance**: "This paper investigates/explores <task/setting>."
+1. **Task and importance**: open with the task or setting and why it matters.
 2. **Underexplored issue**: identify the structural property or deployment constraint.
 3. **Existing limitation**: say why current methods, criteria, or objectives fail.
-4. **Named answer**: "To address this issue, we propose <Name>."
+4. **Named answer**: introduce the method, framework, criterion, or principle.
 5. **Key idea and components**: one key idea, then two or three components.
 6. **Support and evidence**: theory/mechanism if available, then validation.
 
@@ -42,7 +42,7 @@ Use 7 paragraphs for full papers:
 2. **Prior progress**: dominant research lines or camps.
 3. **Overlooked issue**: a property-level limitation, with Figure 1 or an empirical observation.
 4. **Central question**: one standalone question.
-5. **Answer and key idea**: "In search of an answer..." plus named method.
+5. **Answer and key idea**: introduce the named method or framework after the central question, then state the key idea.
 6. **Deeper support**: theory, generalization, mechanism, efficiency, or utility-preservation.
 7. **Contributions**: three or four bullets, each mapped to a technical claim or evidence source.
 
@@ -50,10 +50,10 @@ For short conference papers, merge paragraphs 2-3 and 5-6.
 
 Contribution bullets should follow:
 
-- Problem/property contribution: "We identify/formulate/reveal <issue/property> in <setting>."
-- Method contribution: "We propose <Name>, which <key mechanism>."
-- Theory/mechanism contribution: "We provide <bound/theorem/analysis> showing <why it works>."
-- Evidence contribution: "Comprehensive validation across <evidence sources/settings> demonstrates <specific outcome>."
+- Problem/property contribution: identify or formulate the issue, property, or setting.
+- Method contribution: state the named answer and its core mechanism.
+- Theory/mechanism contribution: state what the analysis explains, guarantees, bounds, or diagnoses.
+- Evidence contribution: state the evidence scope and the specific outcome it supports.
 
 ## Related Work
 
@@ -118,7 +118,7 @@ Do not merely say a method wins. Interpret why it wins:
 
 Use a compact recap:
 
-1. "This paper explores/proposes <Name> for <task>."
+1. Restate the task and named answer in one concise sentence.
 2. Restate the first insight.
 3. Restate the method mechanism.
 4. Restate theory/mechanism if present.

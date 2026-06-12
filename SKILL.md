@@ -1,6 +1,6 @@
 ---
 name: Teacher-Bao-Writing-Skill
-description: Write, restructure, or review AI and large-model research paper text using a logic-first style with a central research question, explicit structural limitation, named method or framework, theory-or-mechanism support, and comprehensive evidence. Use for complete manuscripts as well as partial outputs such as abstracts, introductions, related work, methods, validation sections, conclusions, titles, contribution bullets, figure captions, rebuttal-ready claim framing, and paragraph-level revision.
+description: Write, restructure, translate, or review AI and large-model research paper text using a logic-first academic style with a central research question, explicit structural limitation, named method or framework, theory-or-mechanism support, comprehensive evidence, and restrained reviewer-facing prose. Use for complete manuscripts as well as partial outputs such as abstracts, introductions, related work, methods, validation sections, conclusions, titles, contribution bullets, figure captions, rebuttal-ready claim framing, translation, polishing, and paragraph-level revision.
 ---
 
 # Logic-First Research Paper Writing
@@ -13,13 +13,15 @@ Typical requests:
 
 - Draft or revise Abstract, Introduction, Methodology, Validation, Conclusion, or contribution bullets.
 - Turn a research idea into a paper story with a clear overlooked issue and central question.
-- Rewrite a paragraph so the claim, limitation, mechanism, and evidence are aligned.
+- Rewrite, polish, or translate a paragraph so the claim, limitation, mechanism, and evidence are aligned.
 - Generate only one part of a paper, such as a title, abstract, contribution list, method overview, validation paragraph, or figure caption.
 - Audit whether a draft has the required logic chain: task importance, structural limitation, named solution, theory/mechanism, and multi-angle evidence.
 
 ## Core Stance
 
 This style is reviewer-facing and logic-first. It does not start from "we propose a module"; it starts from a neglected structural mismatch in a task and then asks a compact research question.
+
+The prose style should be precise, restrained, and analytical. It should create the feeling that each sentence is forced by the previous one: background narrows into limitation, limitation motivates question, question motivates method, and method is justified by evidence. Do not rely on recurring stock phrases to create this effect.
 
 Default positioning:
 
@@ -54,7 +56,7 @@ Before drafting prose, fill this chain:
 | Mainstream progress | What two or three directions have advanced the task? |
 | Structural limitation | What property, bias, mismatch, criterion, or deployment constraint remains unresolved? |
 | Concrete evidence | What figure, example, empirical observation, or theorem makes the problem undeniable? |
-| Central question | "How to develop ..." / "Can we develop ..." / "How can we ..." |
+| Central question | A compact question or objective that names the desired artifact, target property, and nontrivial setting. |
 | Named answer | Method, framework, criterion, system, or principle name and one-sentence key idea. |
 | Components | Two or three modules, each addressing one challenge. |
 | Support | Theorem, proposition, generalization bound, mechanism analysis, or empirical verification. |
@@ -98,23 +100,25 @@ Minimum logic-first requirements:
 
 ## Style Rules
 
-1. Prefer "This paper investigates/explores..." over overclaiming.
-2. Frame novelty as an underexplored issue, not as a generic gap.
-3. Use "In search of an answer..." only after a clear central question.
-4. Name the method early and keep the name stable.
-5. Use "Specifically..." to unfold components, not to dump details.
-6. Use "Taking a step further..." for theory, efficiency, or deeper analysis.
+1. Use a measured investigative tone. State what the paper studies, reveals, or develops without inflated certainty.
+2. Frame novelty through the property, assumption, or mismatch being addressed, not through generic claims of being new.
+3. Let transitions follow the logic. Vary connective language instead of repeating the same transition markers across paragraphs.
+4. Name the method early when drafting a full argument, then keep the name stable.
+5. Use component-level details only after the reader understands the failure mode each component addresses.
+6. When adding theory or mechanism analysis, make clear whether it explains, guarantees, bounds, diagnoses, or motivates the design.
 7. Close major claims with evidence: theorem, bound, mechanism observation, case analysis, or empirical result.
-8. Avoid unsupported "comprehensive validation" as a contribution; evidence supports claims but is not the main contribution unless the paper is about resources, benchmarks, or evaluation.
-9. Avoid vague adjectives without the property they modify: do not say only "effective", "robust", or "novel"; say effective under what setting and why.
+8. Treat validation as support for the technical claim, not as a substitute for the claim.
+9. Avoid vague adjectives without the property they modify; specify the setting, condition, or mechanism that makes the adjective true.
+10. For translation or local polishing, preserve the requested scope and source meaning. Do not inject the full logic chain, recurring transition formulas, or extra claims unless the user asks for restructuring.
 
-Load `references/phrase-bank.md` for reusable sentence frames.
+Load `references/phrase-bank.md` when the task needs style guidance. Treat it as a rhetorical move guide, not a source of fixed sentence templates.
 
 ## Output Contract
 
 Default response structure depends on the requested scope:
 
 - **Single paragraph or small rewrite**: return the revised prose first; optionally add 2-4 concise notes on claim/evidence alignment.
+- **Translation or local polishing**: return the translated or polished text first; add notes only when the source has logical ambiguity, unsupported claims, or terminology issues.
 - **Single section**: return a compact section logic chain, the requested section text or outline, and a short claim-evidence check.
 - **Full paper plan or major rewrite**: return the full logic chain, requested prose or section skeleton, claim-evidence map, and audit.
 
