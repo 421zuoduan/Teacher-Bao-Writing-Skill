@@ -1,13 +1,13 @@
 ---
 name: Teacher-Bao-Writing-Skill
-description: Write, restructure, or review research paper text using a logic-first style with a central research question, explicit structural limitation, named method or framework, theory-or-mechanism support, and comprehensive evidence. Use for complete manuscripts as well as partial outputs such as abstracts, introductions, related work, methods, validation sections, conclusions, titles, contribution bullets, figure captions, rebuttal-ready claim framing, and paragraph-level revision.
+description: Write, restructure, or review AI and large-model research paper text using a logic-first style with a central research question, explicit structural limitation, named method or framework, theory-or-mechanism support, and comprehensive evidence. Use for complete manuscripts as well as partial outputs such as abstracts, introductions, related work, methods, validation sections, conclusions, titles, contribution bullets, figure captions, rebuttal-ready claim framing, and paragraph-level revision.
 ---
 
 # Logic-First Research Paper Writing
 
 ## Use This Skill For
 
-Use this skill when the user wants academic paper writing that is reviewer-facing, structurally explicit, and centered on a concrete research question.
+Use this skill when the user wants academic paper writing for AI and large-model research that is reviewer-facing, structurally explicit, and centered on a concrete research question.
 
 Typical requests:
 
