@@ -110,6 +110,7 @@ Minimum logic-first requirements:
 8. Treat validation as support for the technical claim, not as a substitute for the claim.
 9. Avoid vague adjectives without the property they modify; specify the setting, condition, or mechanism that makes the adjective true.
 10. For translation or local polishing, preserve the requested scope and source meaning. Do not inject the full logic chain, recurring transition formulas, or extra claims unless the user asks for restructuring.
+11. Within a paragraph, each sentence should add a new logical step, condition, or piece of evidence. If two neighboring sentences say essentially the same thing, compress them.
 
 Load `references/phrase-bank.md` when the task needs style guidance. Treat it as a rhetorical move guide, not a source of fixed sentence templates.
 

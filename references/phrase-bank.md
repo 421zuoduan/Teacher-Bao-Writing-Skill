@@ -7,6 +7,7 @@ Use this file for style guidance, not for fixed sentence templates. Do not copy 
 - Prefer restrained, reviewer-facing prose over promotional prose.
 - Keep each sentence accountable to a role: context, contrast, limitation, question, answer, mechanism, support, or evidence.
 - Vary sentence openings and transitions. If two adjacent paragraphs begin the same way, rewrite one of them.
+- Within a paragraph, each sentence should add a new logical step, condition, or piece of evidence. If two nearby sentences carry the same meaning, merge them or remove one.
 - Make abstract properties concrete by naming the condition, assumption, setting, or failure mode where they matter.
 - Avoid decorative intensifiers. A strong sentence should be strong because the claim is specific, not because the adjectives are forceful.
 
